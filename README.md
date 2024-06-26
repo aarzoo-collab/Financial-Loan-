@@ -31,39 +31,61 @@ Employment length(in years)
 **Summary: KPI** 
 Formulas:
 **Total Loan Applications**: 39K
+
 Total Loan Applications = Count(financial_loan[id])
 
 MTD LOAN APPLICATIONS :4K
+
 MTD Loan Applications = CALCULATE(TOTALMTD([Total Loan Applications],'Date Table'[Date]))
 
 MOM LOAN APPLICATIONS:6.9%
+
 MOM LOAN Apploications = ([MTD Loan Applications] - [PMTD Loan Applications])/[PMTD Loan Applications]
 
 **Total Funded Amount**: $436 million
+
 Total Funded Amount = Sum(financial_loan[loan_amount])
 
+
 MTD Funded Amount :54million
+
 MTD Funded Amount = CALCULATE(TOTALMTD([Total Funded Amount],'Date Table'[Date]))
 
 Mom Funded Amount:13%
+
 MOM Funded Amount = ([MTD Funded Amount] - [PMTD Funded Amount])/[PMTD Funded Amount]
 
+
+
 **Total Amount Received**: $473 million
+
 Total Amount Recieved = SUM(financial_loan[total_payment])
+
 MTD Amount Received:58 million
+
+
 MTD Amount Recieved = CALCULATE(TOTALMTD([Total Amount Recieved],'Date Table'[Date]))
 
 MOM Funded Amount: 15.8%
+
 MOM Amount Recieved = ([MTD Amount Recieved] - [PMTD Amount Recieved])/[PMTD Amount Recieved]
 
 
+
+
 **Average Interest Rate**: 12.0%
+
 Average Interest Rate = Average(financial_loan[int_rate])
 
 MTD Interest Rate :12%
+
+
 MTD Average Interest Rate = CALCULATE(TOTALMTD([Average Interest Rate],'Date Table'[Date]))
 
+
 MOM AVERAGE Interest Rate:3.5%
+
+
 MOM Average Interest Rate = ([MTD Average Interest Rate] - [PMTD Average Interst Rate])/[PMTD Average Interst Rate]
 
 
@@ -115,12 +137,15 @@ Select Measure = {
 **Term,Purpose,Grade**
 
 **Total Loan Applications by Month**:
+
 Applications show an increasing trend from January to December, peaking in December at approximately 4,000 applications.
 
 **Total Loan Applications by Verification Status**:
+
 Majority of loans are “Not Verified” (blue portion in the pie chart).
 
 **Total Loan Applications by Purpose**:
+
 Most common purposes for loan applications:
 ‘Debt’
 ‘Other’
@@ -129,9 +154,11 @@ Most common purposes for loan applications:
 ‘Auto’
 
 **Total Loan Applications by Home Ownership:**
+
 More renters apply for loans than homeowners.
 
 **Total Loan Applications by Employment Length:**
+
 Individuals employed for 10+ years have applied for the most
 
 
