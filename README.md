@@ -81,8 +81,17 @@ Bad Loan Issued
 
 
 
-Loan Status with 4 KPI 
+
+Loan Status with 4 KPI
+
 ![Loan Status](https://github.com/aarzoo-collab/Financial-Loan-/assets/173943221/962a097a-e76a-47c1-a866-3bf9e333dc8f)
+
+
+
+
+
+
+
 
 
 
