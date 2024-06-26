@@ -1,4 +1,4 @@
-# Project Dashboard
+# Financial Loan Dashboard
 
 ![Financial Loan Summary](https://github.com/aarzoo-collab/Financial-Loan-/assets/173943221/91185b3c-8d85-4146-a3d1-22d34305a273)
 
